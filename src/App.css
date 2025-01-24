@@ -397,7 +397,8 @@ footer p {
 
 .email-link {
   color: white; /* Makes the email link text white */
-  text-decoration: none; /* Removes the underline */
+  text-decoration: none;
+  font-weight: bolder; /* Removes the underline */
 }
 
 .email-link:hover {
