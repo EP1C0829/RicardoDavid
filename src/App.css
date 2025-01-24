@@ -309,7 +309,7 @@ main {
   height: 16px;
   width: 16px;
   position: absolute;
-  left: 30px;
+  left: 42px;
   top: 8px;
   z-index: 1;
 }
@@ -458,6 +458,10 @@ email-link {
   .timeline-year {
     width: 60px;
   }
+
+  .timeline-marker {
+    left: 30px; /* Move marker closer for small screens */
+  }
 }
 
 @media (max-width: 480px) {
@@ -514,6 +518,10 @@ email-link {
 
   .timeline-year {
     width: 50px;
+  }
+
+  .timeline-marker {
+    left: 20px;
   }
 
   footer {
