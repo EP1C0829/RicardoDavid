@@ -395,8 +395,8 @@ footer p {
   color: #ccc;
 }
 
-email-link {
-  color: white !important; /* Makes the email link text white */
+.email-link {
+  color: white; /* Makes the email link text white */
   text-decoration: none; /* Removes the underline */
 }
 
