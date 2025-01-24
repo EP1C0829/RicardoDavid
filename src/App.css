@@ -287,22 +287,21 @@ main {
 
 .timeline-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Ensures vertical alignment */
   position: relative;
   margin-bottom: 40px;
-  padding-left: 100px; /* Increase padding to create space for the marker and year */
+  padding-left: 100px; /* Space for the marker and year */
 }
 
 .timeline-year {
   flex-shrink: 0;
   font-size: 1.5em;
   font-weight: bold;
-  padding-right: 20px;
   text-align: right;
   width: 80px;
   color: #fff;
-  position: relative; /* Ensures it stays in its container */
-  top: -8px; /* Aligns the year properly with the marker */
+  position: relative;
+  top: 0; /* Ensures it's aligned with the marker */
 }
 
 .timeline-marker {
@@ -311,20 +310,20 @@ main {
   height: 16px;
   width: 16px;
   position: absolute;
-  left: 60px; /* Adjust left value to place marker beside the year */
-  top: 8px; /* Align marker vertically with the content */
+  left: 100px; /* Places the marker next to the year */
+  top: 50%; /* Centers the marker vertically within the container */
+  transform: translateY(-50%); /* Adjusts for marker's height */
   z-index: 1;
 }
-
 
 .timeline-content {
   background-color: #3a3a3a;
   border-radius: 8px;
   padding: 20px;
-  width: calc(100% - 120px);
+  width: calc(100% - 120px); /* Adjusted width */
   position: relative;
   z-index: 1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-content h3 {
