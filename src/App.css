@@ -403,3 +403,129 @@ email-link {
 .email-link:hover {
   text-decoration: underline; /* Adds underline on hover */
 }
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .hero-text p {
+    font-size: 25px;
+  }
+
+  .contact-button {
+    font-size: 25px;
+  }
+
+  .myImage img {
+    width: 100%;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skill {
+    max-width: 100%;
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    max-width: 100%;
+  }
+
+  .timeline {
+    padding: 0 20px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-year {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-top: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .contact-button {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .skills-grid {
+    gap: 10px;
+  }
+
+  .skill {
+    padding: 15px;
+  }
+
+  .portfolio-item {
+    flex: 0 1 100%;
+  }
+
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-year {
+    width: 50px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
