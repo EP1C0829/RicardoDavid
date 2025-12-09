@@ -42,14 +42,14 @@ const About = () => (
     <div className="about-content">
       <h2>About Me</h2>
       <p>
-        A motivated and passionate recent graduate with strong skills in
-        programming, software testing, and maintenance. A quick learner who
-        adapts swiftly to high-pressure environments and excels at multitasking.
-        Possesses a solid foundation in handling confidential tasks, supported by
-        managerial and administrative experience gained through academic projects
-        and internships. Eager to leverage my expertise and dedication to
-        contribute effectively to your company's goals while continuing to grow
-        professionally.
+        A motivated and passionate software developer with nearly a year of
+        professional experience specializing in automation and data polling systems.
+        Skilled in building robust backend solutions using Python, async programming,
+        and database technologies. A quick learner who adapts swiftly to high-pressure
+        environments and excels at developing scalable, production-ready applications.
+        Experienced in designing distributed systems, real-time data processing, and
+        API integrations. Eager to leverage my expertise and dedication to contribute
+        effectively to your company's goals while continuing to grow professionally.
       </p>
       <Skills />
     </div>
@@ -70,6 +70,15 @@ const Skills = () => (
           { img: "./images/C++.png", name: "C++" },
           { img: "./images/Java.png", name: "Java" },
           { img: "./images/JavaScript.png", name: "JavaScript" },
+          { img: "./images/postgresql.png", name: "PostgreSQL" },
+          { img: "./images/sqlalchemy.png", name: "SQLAlchemy" },
+          { img: "./images/redis.png", name: "Redis" },
+          { img: "./images/docker.png", name: "Docker" },
+          { img: "./images/asyncio.png", name: "Async Python" },
+          { img: "./images/websocket.png", name: "WebSockets" },
+          { img: "./images/api.png", name: "REST APIs" },
+          { img: "./images/ai-prompting.png", name: "AI Prompting" },
+          { img: "./images/data-polling.png", name: "Data Polling" },
         ].map((skill, index) => (
           <div key={index} className="skill">
             <img src={skill.img} alt={skill.name} />
@@ -121,6 +130,20 @@ const Experience = () => (
     <h2>Experience</h2>
     <div className="timeline">
       {[
+        {
+          year: "2024",
+          title: "Fandom Agency",
+          duration: "July 2024 – Present",
+          description:
+            "Backend Developer specializing in data polling and real-time systems. Developed a distributed data collection platform using Python async programming, PostgreSQL, and Redis. Implemented WebSocket listeners for real-time message capture and built efficient historical data fetching with checkpoint recovery systems.",
+        },
+        {
+          year: "2024",
+          title: "PGOC",
+          duration: "February 2024 – June 2024",
+          description:
+            "Automation Developer focused on Facebook Ads automation. Built automated posting and content management systems to streamline social media advertising workflows. Developed scripts and tools to improve efficiency in ad campaign management and scheduling.",
+        },
         {
           year: "2023",
           title: "ROC.PH",
