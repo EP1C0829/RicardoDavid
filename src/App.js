@@ -180,7 +180,7 @@ const Footer = () => (
     <section id="contact-me">
       <h2>Contact Me</h2>
       <div className="contact-details">
-      <p>Email: <a href="mailto:ricardoiiiadavid@gmail.com?subject=Inquiry from Portfolio Website&body=Hello Ricardo," className="email-link">ricardoiiiadavid@gmail.com</a></p>
+      <p>Email: <a href="mailto:ricardoiiiadavid@gmail.com?subject=Inquiry from Portfolio Website&body=Hello Ricardo," class="email-link">ricardoiiiadavid@gmail.com</a></p>
       <p>Phone: +63 945 578 9716</p>
       <p>Location: Sabang, Dasmariñas Cavite</p>
       </div>

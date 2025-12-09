@@ -1,5 +1,6 @@
 /* app.css */
 
+
 @font-face {
   font-family: 'Satoshi';
   src: url('fonts/Satoshi-Light.otf') format('opentype');
@@ -561,64 +562,145 @@ footer > p {
 }
 
 .email-link {
-  color: #999 !important;
+  color: white; /* Makes the email link text white */
   text-decoration: none;
-  transition: color 0.2s ease;
+  font-weight: bolder; /* Removes the underline */
 }
 
 .email-link:hover {
-  color: #f1c40f !important;
+  text-decoration: underline; /* Adds underline on hover */
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 60px 20px;
-    min-height: auto;
   }
 
   .hero-text {
     max-width: 100%;
   }
 
-  .hero-text .highlight {
-    font-size: 48px;
+  .hero-text h1 {
+    font-size: 35px;
   }
 
-  .myImage {
-    justify-content: center;
-    margin-top: 40px;
+  .hero-text p {
+    font-size: 25px;
+  }
+
+  .contact-button {
+    font-size: 25px;
   }
 
   .myImage img {
-    max-width: 350px;
+    width: 100%;
   }
 
-  .about-content {
-    padding: 60px 30px;
-    width: 90%;
+  .skills-grid {
+    flex-direction: column;
+  }
+
+  .skill {
+    max-width: 100%;
   }
 
   .portfolio-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    max-width: 100%;
+  }
+
+  .timeline {
     padding: 0 20px;
   }
 
-  .timeline::before {
-    left: 20px;
+  .timeline-item {
+    padding-left: 50px;
   }
 
   .timeline-year {
-    display: none;
+    width: 60px;
   }
 
   .timeline-marker {
-    left: 15px;
+    left: 30px; /* Move marker closer for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-top: 20px;
   }
 
-  .timeline-content {
-    margin-left: 40px;
+  .nav-links {
+    gap: 20px; /* Reduce gap between links */
+    padding: 0 10px; /* Add padding for scrolling */
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .contact-button {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .skills-grid {
+    gap: 10px;
+  }
+
+  .skill {
+    padding: 15px;
+  }
+
+  .portfolio-item {
+    flex: 0 1 100%;
+  }
+
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-year {
+    width: 50px;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  .social-links a {
+    font-size: 14px;
+    margin: 0 5px;
   }
 }
